@@ -1,0 +1,8 @@
+<coordinator-app end="2017-01-01T09:00Z" frequency="${coord:days(1)}" name="dashk-demo-coordinator" start="2017-01-01T06:00Z" timezone="GMT" xmlns="uri:oozie:coordinator:0.2">
+  <action>
+    <workflow>
+      <app-path>${oozie.wf.application.path}</app-path>
+      <configuration />
+    </workflow>
+  </action>
+</coordinator-app>

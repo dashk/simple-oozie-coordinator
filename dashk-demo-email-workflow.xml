@@ -1,0 +1,14 @@
+<workflow-app name="dashk-demo-email-workflow" xmlns="uri:oozie:workflow:0.4">
+    <start to="notify"/>
+    <action name="notify">
+        <email xmlns="uri:oozie:email-action:0.1">
+            <to></to>
+            <subject>Dashk Email Demo Workflow Subject</subject>
+            <body>Dashk Email Demo Workflow Body</body>
+        </email>
+        <ok to="end"/>
+        <error to="kill"/>
+    </action>
+    <kill name="kill" />
+    <end name="end"/>
+</workflow-app>
